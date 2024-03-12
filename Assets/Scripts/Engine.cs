@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ public class Engine : MonoBehaviour
 {
 
    [SerializeField] private UnityEngine.UI.Slider mainSlider;
+ 
     [SerializeField] private Animator animator;
     private const string OPEN_PARAM = "Open";
 
@@ -21,5 +23,7 @@ public class Engine : MonoBehaviour
     {
         animator.SetFloat(OPEN_PARAM, mainSlider.value);
     }
+
+
 
 }

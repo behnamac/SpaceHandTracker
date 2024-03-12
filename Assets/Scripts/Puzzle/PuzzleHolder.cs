@@ -18,7 +18,7 @@ public class PuzzleHolder : XRSocketInteractor
     public override bool CanSelect(IXRSelectInteractable interactable)
     {
         var _IDCheck = CheckIDSelect(interactable);
-        return base.CanSelect(interactable) && _IDCheck ;
+        return base.CanSelect(interactable) && _IDCheck;
     }
 
     private bool CheckIDHover(IXRHoverInteractable interactable)
